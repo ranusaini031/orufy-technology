@@ -133,7 +133,7 @@ const AddProductModal = ({ onClose, onProductAdded, editProduct, refreshProducts
                 );
             } else {
                 response = await axios.post(
-                    `${import.meta.env.VITE_API_URL}/api/products`,
+                    `${API}/api/products`,
                     formDataToSend,
                     config
                 );

@@ -10,10 +10,9 @@ import dbConnect from './src/config/db.js';
 const app = express();
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL?.split(","),
-  credentials: true
+    origin: process.env.FRONTEND_URL?.split(","),
+    credentials: true
 }));
-
 
 app.use(express.json());
 
@@ -21,7 +20,7 @@ app.use("/api/auth", userRouter);
 app.use("/api/products", productRouter);
 
 app.get("/", (req, res) => {
-    res.send(`Server is running on port ${process.env.PORT || 2026}`);
+    res.send(`Server is running on port ${process.env.PORT || 5000}`);
 });
 
 app.use((err, req, res, next) => {
@@ -35,7 +34,7 @@ app.use((err, req, res, next) => {
 const startServer = async () => {
     try {
         await dbConnect();
-        const port = process.env.PORT || 2026;
+        const port = process.env.PORT || 5000;
         app.listen(port, () => {
             console.log(` Server running on port ${port}`);
         });

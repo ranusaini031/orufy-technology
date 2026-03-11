@@ -18,8 +18,6 @@ body {
 }
 
 
-/* SignUp page ----->> */
-
 .signup-content {
     width: 100%;
     height: 100vh;
@@ -846,7 +844,7 @@ body {
 
 .form-group label {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 20px;
     color: rgba(52, 64, 84, 1);
 }
 

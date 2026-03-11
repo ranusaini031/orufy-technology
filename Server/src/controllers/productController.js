@@ -11,7 +11,7 @@ const getAllProducts = async (req, res) => {
 
     if (category) {
       filter.category = category;
-    }
+    } 
 
     if (search) {
       filter.$or = [
@@ -219,7 +219,7 @@ const updateStatus = async (req, res) => {
       message,
       data: { product }
     });
-  } catch (error) {
+  } catch (error) {   
     console.error("Update status error:", error);
     res.status(500).json({
       success: false,
