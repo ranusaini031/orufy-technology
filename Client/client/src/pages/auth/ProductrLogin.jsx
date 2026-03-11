@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import bgImage from "../../assets/bg-Img.png";
 import logoIcon from "../../assets/logo-icon.png";
-import card from "../../assets/card.jpg";
+import card from "../../assets/Card.png";
 
 import './Home.css';
 
