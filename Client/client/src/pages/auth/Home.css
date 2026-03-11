@@ -1,0 +1,324 @@
+/* ProductrLogin.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.productr-login-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left side with TWO images - Ek ke upar ek */
+.left-side {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  /* background-color: #1a1a2e; */
+}
+
+/* Background Image - Peechhe wali */
+.background-image {
+  width: 690px;
+  height: 960px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  border-radius: 32px;
+ border-image:
+        linear-gradient(180deg,
+            rgba(1, 7, 96, 0.1),
+            rgba(0, 34, 131, 0.1),
+            rgba(115, 74, 163, 0.3),
+            rgba(231, 149, 156, 0),
+            rgba(228, 161, 130, 0.3),
+            rgba(191, 54, 19, 0.2));
+  z-index: 1;
+  /* background: linear-gradient(to top (0,0,0,0.1)); */
+}
+
+/* Productr Text - TOP LEFT CORNER */
+.productr-text {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  /* color: white; */
+  font-size: 32px;
+  font-weight: 800;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1.5px;
+  z-index: 3;
+  text-align: left;
+  
+
+}
+
+/* Card Image - Upar wali (Dusri image) */
+.card-image-overlay {
+  position: absolute;
+/* margin-right: 210px; */
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  height: 100px;
+  /* background: url('public/Card.png'); */
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 30px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.card-image-content {
+  text-align: center;
+  width: 100%;
+}
+
+/* .card-image-content h3 {
+  color: #666;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  font-style: italic;
+} */
+
+
+/* Right side with login form */
+.right-side {
+  width: 718px;
+  height: 1023px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 40px; */
+  left: 722px;
+  background: none;
+  margin-top: 6%;
+  /* background-color: #f5f7fb;url(../../../../../Downloads/Vector (1).png) */
+}
+
+.login-container {
+  width: 718px;
+  max-width: 570px;
+  /* background-color: white; */
+  border-radius: 20px;
+  /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); */
+  padding: 50px;
+  /* border: 1px solid #eaeaea; */
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #95a5a6;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 18px 18px 18px 50px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  /* background-color: #fafafa; */
+}
+
+input:focus {
+  outline: none;
+  border-color: #3a56d4;
+  /* background-color: white;/ */
+  box-shadow: 0 0 0 4px rgba(58, 86, 212, 0.15);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #3a56d4, #4361ee);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(58, 86, 212, 0.3);
+}
+
+.login-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2d46c4, #3a56d4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(58, 86, 212, 0.4);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.signup-section {
+  margin-top: 40%;
+  /* padding-top: 25px; */
+  /* border-top: 2px solid #f0f0f0; */
+  text-align: center;
+}
+
+.signup-section p {
+  color: #555;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-link {
+  background: none;
+  border: 2px solid #3a56d4;
+  color: #3a56d4;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 12px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  background-color: #3a56d4;
+  color: white;
+  box-shadow: 0 5px 15px rgba(58, 86, 212, 0.3);
+}
+.hello{
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 1100px) {
+  .productr-login-container {
+    flex-direction: column;
+  }
+  
+  .left-side, .right-side {
+    width: 100%;
+  }
+  
+  .left-side {
+    height: 45%;
+  }
+  
+  .right-side {
+    height: 55%;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+  
+  .productr-text {
+    top: 25px;
+    left: 30px;
+    font-size: 36px;
+  }
+  
+  .card-image-overlay {
+    width: 300px;
+    height: 180px;
+  }
+  
+  .card-image-content h3 {
+    font-size: 22px;
+  }
+  
+  .card-image-content h2 {
+    font-size: 28px;
+  }
+  
+  .login-container {
+    padding: 40px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productr-text {
+    font-size: 32px;
+    left: 20px;
+    top: 20px;
+  }
+  
+  .card-image-overlay {
+    width: 260px;
+    height: 160px;
+    padding: 20px;
+  }
+  
+  .card-image-content h3 {
+    font-size: 20px;
+  }
+  
+  .card-image-content h2 {
+    font-size: 24px;
+  }
+  
+  .login-container {
+    padding: 30px 25px;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+  
+  input {
+    padding: 16px 16px 16px 45px;
+  }
+}
